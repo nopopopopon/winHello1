@@ -21,6 +21,7 @@ namespace WindowsFormsAppl2
         {
             string ipath1 = "c:\\tmp1\\無題.bmp";
             pictureBox1.Load(ipath1);
+            button1.Text = "OK";
         }
     }
 }
