@@ -19,7 +19,9 @@ namespace WindowsFormsAppl2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string ipath1 = "c:\\tmp1\\このみタペ.jpg";
+//            string ipath1 = "c:\\tmp1\\このみタペ.jpg";
+            string ipath1 = "c:\\tmp1\\ぱんちら.jpg";
+            /* ぱんちらに変更 */
 
             // ファイル存在チェックして対応
             if (System.IO.File.Exists(ipath1))
