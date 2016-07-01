@@ -17,9 +17,14 @@ namespace WindowsFormsAppl2
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
-//            string ipath1 = "c:\\tmp1\\このみタペ.jpg";
+
+            // object Form2;
+
+
+        //            string ipath1 = "c:\\tmp1\\このみタペ.jpg";
             string ipath1 = "c:\\tmp1\\ぱんちら.jpg";
             /* ぱんちらに変更 */
 
@@ -29,7 +34,15 @@ namespace WindowsFormsAppl2
                 pictureBox1.SizeMode = PictureBoxSizeMode.Zoom; // 窓に大きさあわせる
 
                 pictureBox1.Load(ipath1);
+
+                /* ここから Form2生成して表示のコード試験 */
+                Form2 myform2 = new Form2();
+
+                myform2.Show();
                 
+                myform2.pictureBoxF2.SizeMode = PictureBoxSizeMode.Zoom; // 窓に大きさあわせる
+                myform2.pictureBoxF2.Load(ipath1);
+
                 button1.Text = "おーーけー!";
             }
             else { 
@@ -37,4 +50,5 @@ namespace WindowsFormsAppl2
             }
         }
     }
+   
 }
